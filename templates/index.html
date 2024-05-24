@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{%load static%}
+{% block title %} Home{% endblock title %}
+
+{% block body %}
+<div class = "container-fluid px-0">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static "img/h1.png" %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static "img/h3.jpg" %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static "img/h4.jpg" %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div class="container my-3">
+  <div class="container my-3">
+    <h1 class="text-center" style="padding-top: 10px; color: brown;"> <u>How We Works </u></h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">       
+          <img src="{% static "img/w1.jpg" %}" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center"><b>We Collect Your Clothes</b></p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="{% static "img/w2.jpg" %}" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center"><b>Wash Your Clothes</b></p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="{% static "img/w3.jpg" %}" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center"><b>Get Deliverd</b></p>
+           
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="container my-3">
+  <h1 class="text-center" style="padding-top: 10px; color: brown;"> <u> Select Our Services </u> </h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">       
+        <img src="{% static "img/18.jpg" %}" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">One stop solution in Noida for dry cleaning silk, cotton, velvet or chenille curtains. We remove and hang the curtains back after cleaning as a complimentary service.</p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="{% static "img/19.jpg" %}" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">Asclean stores in Noida use Italian creams, oils and machines for dry cleaning your leather shoes, handbags, jackets, wallets/purses and belts. Repair services are also available.</p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="{% static "img/17.jpg" %}" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">All stores in Noida use Woolmark approved Lagoon dry cleaning technology, to ensure that your woolen clothes retain their shape, size and fluffiness.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 style="text-align: center; color: brown;"> <u>Laundry</u></h2>
+          <p class="lead">The laundry process at UClean begins by sorting the clothes.
+             After sorting, similar clothes are washed together. The best detergent brands are used for washing clothes.
+              The washing machine is then loaded by adjusting the right setting for your clothes. The freshwater rinse during the process helps in eliminating the dirt and stains from the clothes. 
+              We air-dry your clothes in anti-bacterial stainless-steel air-dryers that eliminate Direct UV rays from the sun which react with the colour pigments of your clothes and create bleaching effect. After the laundry cycle ends,High pressure vacuum steam iron is done for that perfect finishing .
+             As per CDC and WHO, steam sterilization is best and safest way to sanitize your clothes.</p>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static "img/b3.jpg" %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <hr class="">
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 style="text-align: center; color: brown;"> <u>Steam Iron</u></h2>
+          <br>
+          <p class="lead">No more burnt or stained clothes. We at Dhobiwala use an all steam process to remove the wrinkles in your garment. 
+            For those who wish to wash their clothes at home and yet wear crisp finished garments can use our steam ironing service.
+             Expect to have your garments returned in 2-3 days.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="{% static "img/b4.png" %}" class="d-block w-100" alt="...">
+
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container-fluid">
+  
+</div>
+
+{% endblock body %}
+

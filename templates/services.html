@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{%load static%}
+{% block title %} Services{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+    <img src="{%static 'img/h3.jpg'%}" class="d-block w-100 mx-0" alt="...">
+</div>
+<div class="container">
+<h2 class="text-center" style="padding-top: 10px; color: brown;"><u>Our Services</u> </h2>
+</div>
+<div class="container my-3">
+  <div class="container my-3"> 
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">       
+          <img src="{% static "img/w1.jpg" %}" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center"><b>We Collect Your Clothes</b></p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="{% static "img/w2.jpg" %}" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center"><b>Wash Your Clothes</b></p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="{% static "img/w3.jpg" %}" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center"><b>Get Deliverd</b></p>
+           
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="container my-3">
+    <div class="row featurette">
+        <div class="col-md-7">
+          <h2 style="text-align: center; color: brown;"> <u>Laundry</u></h2>
+          <p class="lead">The laundry process at UClean begins by sorting the clothes.
+             After sorting, similar clothes are washed together. The best detergent brands are used for washing clothes.
+              The washing machine is then loaded by adjusting the right setting for your clothes. The freshwater rinse during the process helps in eliminating the dirt and stains from the clothes. 
+              We air-dry your clothes in anti-bacterial stainless-steel air-dryers that eliminate Direct UV rays from the sun which react with the colour pigments of your clothes and create bleaching effect. After the laundry cycle ends,High pressure vacuum steam iron is done for that perfect finishing .
+             As per CDC and WHO, steam sterilization is best and safest way to sanitize your clothes.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="{% static "img/b3.jpg" %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <hr class="">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 style="text-align: center; color: brown;"> <u>Steam Iron</u></h2>
+          <br>
+          <p class="lead">No more burnt or stained clothes. We at Dhobiwala use an all steam process to remove the wrinkles in your garment. For those who wish to wash their clothes at home and yet wear crisp finished garments can use our steam ironing service.
+             Expect to have your garments returned in 2-3 days.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="{% static "img/b4.png" %}" class="d-block w-100" alt="...">
+    
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <h2 class="text-center" style="padding-top: 10px; color: brown;"><u>Laundry Plans</u> </h2>
+        </div>
+        <div class="container my-3">
+          <div class="container my-3"> 
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">       
+                  <h2 style="text-align: center;">Basic Plan</h2><hr>
+                  <ul>
+                    <li> 5 Shirts</li>
+                    <li> 5 T-Shirts</li>
+                    <li> 5 Pants</li>
+                    <li> 2 Shoes</li>
+                    <li> 2 Coat</li>
+                  </ul>
+                  <div class="card-body">
+                    <p class="button card-text text-center"><b>399 / month</b></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <h2 style="text-align: center;">Standard Plan</h2><hr>
+                  <ul>
+                    <li> 9 Shirts</li>
+                    <li> 9 T-Shirts</li>
+                    <li> 9 Pants</li>
+                    <li> 3 Shoes</li>
+                    <li> 3 Coat</li>
+                  </ul>
+                  <div class="card-body">
+                    <p class="button card-text text-center"><b>699 / month</b></p>                  
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <h2 style="text-align: center;">Premium Plan</h2> <hr>
+                  <ul>
+                    <li> 15 Shirts</li>
+                    <li> 15 T-Shirts</li>
+                    <li> 15 Pants</li>
+                    <li> 5 Shoes</li>
+                    <li> 5 Coat</li>
+                  </ul>
+                  <div class="card-body">
+                    <p class="button card-text text-center"><b>999 / month</b></p>
+                   
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          <hr>
+        </div>
+</div>
+ {% endblock body %}
+
